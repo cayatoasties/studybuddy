@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <style>
+      #list {
+        list-style-position: inside;
+      }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h2> tasks to do </h2>
+    <input id="task" placeholder="Task">
+    <button id="add">Add</button>
+    <ul id="list"></ul>
+    </div>
+    <script>
+        let task = document.getElementById("task");
+        let add = document.getElementById("add");
+        let list = document.getElementById("list");
+        add.addEventListener("click", addTask);
+        
+
+        // Type your code here:
+        function addTask() {
+            let taskValue = task.value;
+            let listItem = document.createElement('li');
+            listItem.textContent=taskValue;
+            list.appendChild(listItem);
+            task.value = '';
+            let deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            listItem.appendChild(deleteButton);
+            deleteButton.addEventListener('click', function(){
+            list.removeChild(listItem);
+        })
+            
+        }
+
+        
+    </script>
+</body>
+</html>
