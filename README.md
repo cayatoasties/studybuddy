@@ -1,2 +1,3 @@
 # studybuddy.github.io
-todo list with fish buddies so u lock in!!!!
+todo list with gamification tools in the making!!
+i wish to add pets in this :)
