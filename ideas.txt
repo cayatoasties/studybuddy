@@ -1,0 +1,5 @@
+for todo list
+1. make it so theres sub to do lists
+
+for pets
+1. animate the pets to move
